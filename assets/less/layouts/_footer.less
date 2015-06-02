@@ -1,0 +1,24 @@
+.content-info {
+  height:@footerheight;
+  color:white;
+  background:@brand-primary;
+  .navbar-brand {
+    line-height:@footerheight;
+    height:@footerheight;
+    padding:0;
+    color:white;
+    font-size:20px;
+    font-family:'MetaPlusBlack', @font-family-sans-serif;
+    text-transform:uppercase;
+    @media (max-width: @grid-float-breakpoint-max) {
+      margin-left:0;
+    }
+  }
+  .copy {
+    font-family:'MetaPlusRoman', @font-family-sans-serif;
+    p {
+      margin:0;
+      line-height:@footerheight;
+    }
+  }
+}

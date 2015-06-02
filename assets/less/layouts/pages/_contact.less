@@ -1,0 +1,98 @@
+#contact,
+#contact-details {
+  .content {
+    .gform_wrapper {
+      margin:@gap 0;
+      .gform_fields {
+        .list-unstyled();
+        .content-columns(1);
+        font-family:@font-family-sans-serif;
+        &:last-child {margin-bottom:0; }
+        .gfield {
+          position:relative;
+          list-style:none;
+          .form-group();
+          font-size:@font-size-base;
+          &:last-child {margin-bottom:0; }
+          &:before {
+            content:'';
+            line-height:1;
+            padding-right:0;
+          }
+          .gfield_label {
+            color:@brand-primary;
+            font-weight:400;
+            font-family:'MetaPlusRoman', @font-family-sans-serif;
+            .gfield_required {
+              color:transparent;
+              &:after {
+                margin-left:-3px;
+                color:@brand-primary;
+                content:"(required)";
+                .nl & {
+                  content:"(verplicht)";
+                }
+              }
+            }
+          }
+          .ginput_container input,
+          .ginput_container select,
+          .ginput_container textarea {
+            border:none;
+            .box-shadow(none);
+          }
+          &.gfield_error {
+            .gfield_label,
+            .validation_message {
+              font-family:'MetaPlusRoman', @font-family-sans-serif;
+              color:@state-danger-text;
+            }
+            .validation_message {
+              margin-top:5px;
+              font-size:0.9em;
+            }  
+            .gfield_label {
+              .gfield_required {
+                &:after {
+                  color:@state-danger-text;
+                }
+              }
+            }
+          }
+        }
+      }
+      .gform_button {
+        background-color:@gray-light;
+        width:100%;
+        &:hover,
+        &:focus {
+          background-color:@gray;
+        }
+        &:active,
+        &.active {
+          background-color:@gray;
+          .box-shadow(none);
+        }
+      }
+    }
+    .entry-content {
+      p {
+        color:@brand-primary;
+        font-weight:400;
+        font-family:'MetaPlusRoman', @font-family-sans-serif;
+        @media (min-width: @screen-sm-min) {
+          .content-columns(1);
+        }
+        a {color:@gray-dark;}
+      }
+      .btn {
+        float:right;
+        margin:0;
+        i {
+          font-size:1.2em;
+          padding-right:0.3em;
+        }
+      }
+    }
+  }
+}

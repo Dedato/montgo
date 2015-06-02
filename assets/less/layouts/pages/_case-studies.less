@@ -1,0 +1,31 @@
+.content {
+  .case-studies {
+    padding:0;
+    list-style:none;
+    font-size:floor((@font-size-base * 1.28)); // ~18px;
+    font-family:'MetaPlusRoman', @font-family-sans-serif;
+    @media (min-width: @screen-sm-min) {
+      .content-columns(2);
+    }
+    &:last-child {margin-bottom:0; }
+    .case_study {
+      position:relative;
+      list-style:none;
+      margin-bottom:@gap;
+      padding-left:2.5em;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      &:before {
+        position:absolute;
+        top:-5px;
+        left:0;
+        content:'\002A';
+        line-height:1;
+        color:@gray-light;
+        font-family:'MetaPlusBold', @font-family-sans-serif;
+        font-size:3.125em;
+      }
+    }
+  }
+}   

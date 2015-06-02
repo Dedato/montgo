@@ -1,0 +1,27 @@
+.header-image {
+  position:relative;
+  img {width:100%; }
+  .header-caption {
+    position:absolute;
+    bottom:@gap / 2;
+    right:@gap / 2;
+    left:@gap / 2;
+    text-align:right;
+    @media (max-width: @grid-float-breakpoint-max) {
+      left:0;
+    }
+    figcaption {
+      color:white;
+      font-size:1.29em;
+      font-family:'MetaPlusRoman', @font-family-sans-serif;
+      text-shadow: @carousel-text-shadow;
+    }
+  }
+}
+#skrollr-body {
+  .one-page {
+    &:last-child {
+      .content {padding:40px 0 0;}
+    }
+  }  
+}  

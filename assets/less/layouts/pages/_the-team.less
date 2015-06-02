@@ -1,0 +1,29 @@
+.team {
+  .team-header {
+    background:@gray-lighter;
+    margin-bottom:@gap * 0.66;
+    .portrait {
+      position:relative;
+      background-color:#261a14;
+      #gradient.vertical-three-colors(#2b190f; #2e170f; 50%; #25140c); // for cropped images
+      @media (min-width: (@screen-sm-min + @grid-gutter-width)) {
+        #gradient.vertical-three-colors(#261a14; #452f24; 50%; #312119);
+      }
+      .entry-image {
+        img {width:auto;}
+      }
+      .entry-title {
+        position:absolute;
+        bottom:@gap / 2;
+        right:@gap / 2;
+        text-align:right;
+        h2, h3 {line-height:1; }
+        h2 {color:white; margin-bottom:5px; }
+        h3 {color:@gray-light; margin-bottom:0; }
+      }
+    }
+  }
+  .team-content {
+    margin-bottom:@gap;
+  }
+}

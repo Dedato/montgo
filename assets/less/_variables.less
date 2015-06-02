@@ -1,0 +1,88 @@
+// Grid settings
+// -------------------------
+@main-sm-columns:                          @grid-columns;
+@sidebar-sm-columns:                       4;
+
+@container-tablet:                         100%;
+@container-desktop:                        ((940px + @grid-gutter-width));
+@container-large-desktop:                  ((946px + @grid-gutter-width));
+@grid-float-breakpoint:                    @screen-md-min;
+
+//== Colors
+@gray-darker:                              lighten(#000, 13.5%); // #222
+@gray-dark:                                lighten(#000, 20%);   // #333
+@gray:                                     #525252;
+@gray-light:                               #B2B2B2;
+@gray-lighter:                             #EDEDEE;
+@brand-primary:                            #614C3E;
+@text-color:                               @gray;
+
+//== Typography
+@font-size-h1:                             floor((@font-size-base * 2.28)); // ~32px
+@font-size-h2:                             floor((@font-size-base * 1.7)); // ~24px
+@font-size-h3:                             floor((@font-size-base * 1.7)); // ~24px
+@font-size-h4:                             ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:                             @font-size-base;
+@font-size-h6:                             ceil((@font-size-base * 0.85)); // ~12px
+
+@headings-font-weight:                     400;
+
+// Basics of a navbar
+@navbar-height:                            40px;
+@navbar-margin-bottom:                     0;
+@navbar-border-radius:                     0;
+@navbar-padding-horizontal:                floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:                  ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:               340px;
+
+@navbar-default-color:                     white;
+@navbar-default-bg:                        @brand-primary;
+@navbar-default-border:                    transparent;
+
+// Navbar links
+@navbar-default-link-color:                white;
+@navbar-default-link-hover-color:          white;
+@navbar-default-link-hover-bg:             lighten(@brand-primary, 6.5%);
+@navbar-default-link-active-color:         @gray;
+@navbar-default-link-active-bg:            @gray-lighter;
+@navbar-default-link-disabled-color:       @gray;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               white;
+@navbar-default-brand-hover-color:         @gray-lighter;
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           transparent;
+@navbar-default-toggle-icon-bar-bg:        white;
+@navbar-default-toggle-border-color:       transparent;
+
+
+//== Icons
+@icon-font-path:                           "../vendor/bootstrap/fonts/";
+
+//== Components
+@border-radius-base:                       0;
+@border-radius-large:                      0;
+@border-radius-small:                      0;
+
+//== Forms
+@input-bg:                                @gray-lighter;
+@input-bg-disabled:                       @gray;
+@input-color:                             @gray;
+@input-color-placeholder:                 @gray-light;
+@input-height-base:                       (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-large:                      (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+@input-height-small:                      (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+@legend-color:                            @gray-dark;
+@legend-border-color:                     #e5e5e5;
+@input-group-addon-bg:                    @gray-lighter;
+@input-group-addon-border-color:          @input-border;
+
+
+//== Custom Variables
+@gap:                                      30px;
+@headerheight-max:                        120px;
+@headerheight-min:                        @navbar-height;
+@footerheight:                            60px;

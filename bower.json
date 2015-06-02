@@ -1,0 +1,26 @@
+{
+  "name": "roots",
+  "version": "7.0.0",
+  "homepage": "http://roots.io",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "bootstrap": "3.2.0",
+    "respond": "1.4.2",
+    "skrollr": "https://github.com/Prinzhorn/skrollr.git#~0.6.26",
+    "skrollr-menu": "https://github.com/Prinzhorn/skrollr-menu.git#~0.1.12",
+    "picturefill": "https://github.com/scottjehl/picturefill.git#~2.1.0",
+    "jquery.timer-tools": "https://github.com/lolmaus/jquery.timer-tools.git#~0.1.0",
+    "imagesloaded": "https://github.com/desandro/imagesloaded.git#~3.1.8"
+  }
+}

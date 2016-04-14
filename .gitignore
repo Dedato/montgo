@@ -9,3 +9,5 @@ assets/js/vendor/modernizr.min.js
 assets/manifest.json
 .grunt/ftpush/build.json
 .ftppass
+.DS_Store
+DEDATO_INSTRUCTIONS.md
